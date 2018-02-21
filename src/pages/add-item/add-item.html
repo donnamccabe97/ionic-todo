@@ -24,6 +24,6 @@
 
   </ion-list>
 
-  <button full ion-button color="secondary" (click)="saveItem()">Save</button>
+  <button ion-button [disabled]="!(title && description)" full color="secondary" (click)="saveItem()">lol</button>
 
 </ion-content>

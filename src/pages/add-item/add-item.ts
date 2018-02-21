@@ -9,20 +9,19 @@ export class AddItemPage {
 
   title: string;
   description: string;
+  isEnabled: boolean = false;
 
   constructor(public navCtrl: NavController, public view: ViewController) {
 
   }
 
   saveItem(){
-
     let newItem = {
       title: this.title,
       description: this.description
     };
 
     this.view.dismiss(newItem);
-
   }
 
   close(){
